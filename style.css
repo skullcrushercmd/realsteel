@@ -3,17 +3,17 @@
     src: url('font/Steel.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'TESLA';
-    src: url('font/TESLA.ttf') format('truetype');
+    font-family: 'Tesla';
+    src: url('font/Tesla.ttf') format('truetype');
 }
 body {
-    font-family: 'TESLA', sans-serif;
+    font-family: 'Steel', sans-serif;
 }
 .top-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 22px;
     background-color: #f8f9fa;
 }
 .wrapper {
@@ -26,14 +26,14 @@ body {
     align-items: center;
 }
 .profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
     margin-right: 15px;
 }
 .navigation {
     display: flex;
-    gap: 15px;
+    gap: 18px;
 }
 .navigation a {
     text-decoration: none;
@@ -42,9 +42,12 @@ body {
 .title {
     position: absolute;
 }
-.steel {
+.title .steel {
     font-family: 'Steel', sans-serif;
+    font-size: 22px;
 }
-.tesla {
-    font-family: 'TESLA', sans-serif;
+.title .tesla {
+    font-family: 'Tesla', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
