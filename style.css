@@ -41,6 +41,8 @@ body {
 }
 .title {
     position: absolute;
+    text-decoration: none;
+    color: inherit;
 }
 .title .steel {
     font-family: 'Steel', sans-serif;
