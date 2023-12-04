@@ -3,13 +3,22 @@
 <head>
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
 </head>
 <body>
     <div class="top-bar">
         <div class="wrapper">
             <div class="profile">
-                <img src="/pfp.png" alt="Discord Profile">
                 <!-- Add your social links here -->
+                <a href="https://discord.com/users/756728175894986824" target="_blank" rel="noopener noreferrer">
+                    <img src="/pfp.png" alt="Discord Profile">
+                </a>
+                <a href="https://github.com/skullcrushercmd" target="_blank" rel="noopener noreferrer">
+                    <div id="github" class="lottie"></div>
+                </a>
+                <a href="https://www.youtube.com/channel/your_youtube_channel_id" target="_blank" rel="noopener noreferrer">
+                    <div id="youtube" class="lottie"></div>
+                </a>
             </div>
             <div class="navigation">
                 <!-- Add your navigation links here -->
@@ -18,12 +27,40 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
-        <a href="homepage.html" class="title">
+        <a href="index.html" class="title">
             <span class="steel">rea</span><span class="tesla">L</span> <span class="steel">stee</span><span class="tesla">L</span>
         </a>
     </div>
     <main>
         <!-- Add your main content here -->
     </main>
+    <script>
+        var githubAnimation = lottie.loadAnimation({
+            container: document.getElementById('github'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: '/github.json'
+        });
+        var youtubeAnimation = lottie.loadAnimation({
+            container: document.getElementById('youtube'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: 'youtube.json'
+        });
+        document.getElementById('github').addEventListener('mouseover', function() {
+            githubAnimation.play();
+        });
+        document.getElementById('github').addEventListener('mouseout', function() {
+            githubAnimation.stop();
+        });
+        document.getElementById('youtube').addEventListener('mouseover', function() {
+            youtubeAnimation.play();
+        });
+        document.getElementById('youtube').addEventListener('mouseout', function() {
+            youtubeAnimation.stop();
+        });
+    </script>
 </body>
 </html>
