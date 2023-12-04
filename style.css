@@ -8,13 +8,21 @@
 }
 body {
     font-family: 'Steel', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    color: #f8f9fa; 
 }
 .top-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 22px;
-    background-color: #f8f9fa;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(59, 59, 59, 0.8);
+    
+    width: 100%;
+    box-shadow: 0 0 10px rgb(7, 134, 207), inset 0 -10px 10px rgb(7, 134, 207);
 }
 .wrapper {
     display: flex;
@@ -33,24 +41,26 @@ body {
 }
 .navigation {
     display: flex;
-    gap: 18px;
+    gap: 22px;
+    margin-right: 20px;
 }
 .navigation a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
 }
 .title {
     position: absolute;
     text-decoration: none;
     color: inherit;
+    color: rgb(232, 232, 230)
 }
 .title .steel {
     font-family: 'Steel', sans-serif;
-    font-size: 22px;
+    font-size: 26px;
 }
 .title .tesla {
     font-family: 'Tesla', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 .lottie {
