@@ -11,12 +11,12 @@
             <div class="profile">
                 <!-- Add your social links here -->
                 <a href="https://discord.com/users/756728175894986824" target="_blank" rel="noopener noreferrer">
-                    <img src="/pfp.png" alt="Discord Profile">
+                    <img src="/content/pfp.png" alt="Discord Profile">
                 </a>
                 <a href="https://github.com/skullcrushercmd" target="_blank" rel="noopener noreferrer">
                     <div id="github" class="lottie"></div>
                 </a>
-                <a href="https://www.youtube.com/channel/your_youtube_channel_id" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UCeo0VreehjhaiPYnf4K7kSQ" target="_blank" rel="noopener noreferrer">
                     <div id="youtube" class="lottie"></div>
                 </a>
             </div>
@@ -40,14 +40,14 @@
             renderer: 'svg',
             loop: true,
             autoplay: false,
-            path: '/github.json'
+            path: '/content/github.json'
         });
         var youtubeAnimation = lottie.loadAnimation({
             container: document.getElementById('youtube'),
             renderer: 'svg',
             loop: true,
             autoplay: false,
-            path: 'youtube.json'
+            path: '/content/youtube.json'
         });
         document.getElementById('github').addEventListener('mouseover', function() {
             githubAnimation.play();
