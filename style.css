@@ -10,8 +10,11 @@ body {
     font-family: 'Steel', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #282828;
+    
     color: #f8f9fa; 
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(36, 36, 36));
+    position: relative; 
+    overflow: hidden;
 }
 .top-bar {
     display: flex;
@@ -19,16 +22,32 @@ body {
     align-items: center;
     padding: 18px;
     background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #000; 
     border-bottom-color: rgba(59, 59, 59, 0.8);
+    box-sizing: border-box;
+    width: calc(100% - 25px);
     
-    width: 100%;
-    box-shadow: 0 0 10px rgb(7, 134, 207), inset 0 -10px 10px rgb(7, 134, 207);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.top-bar::before {
+    content: "";
+    position: absolute;
+    top: -10px; 
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(36, 36, 36)); 
+    z-index: -1;
+    filter: blur(10px);
 }
 .wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .profile {
     display: flex;
     align-items: center;
@@ -51,8 +70,12 @@ body {
 .title {
     position: absolute;
     text-decoration: none;
-    color: inherit;
-    color: rgb(232, 232, 230)
+    color: transparent;
+    color: rgb(40, 122, 216);
+    background: linear-gradient(to bottom right, black, rgb(40, 122, 216));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .title .steel {
     font-family: 'Steel', sans-serif;

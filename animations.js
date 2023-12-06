@@ -24,3 +24,6 @@ document.getElementById('youtube').addEventListener('mouseover', function() {
 document.getElementById('youtube').addEventListener('mouseout', function() {
     youtubeAnimation.stop();
 });
+
+
+
