@@ -125,43 +125,43 @@ body.white-background {
 }
 #sliding-image {
     position: absolute;
-    top: 10%; /* Position near the top of the screen */
-    left: -100%; /* Start off the left edge of the screen */
-    transform: translateX(-50%); /* Center the image horizontally */
+    top: 10%; 
+    left: -100%; 
+    transform: translateX(-50%); 
     animation: slideIn 2s forwards;
-    width: 25%; /* Resize the image to 25% of its original width */
-    height: 50%; /* Keep the aspect ratio of the image */
+    width: 25%; 
+    height: 50%; 
 }
 
 #sliding-text {
     position: absolute;
-    bottom: 30%; /* Position higher up on the screen */
-    left: -100%; /* Start off the left edge of the screen */
-    transform: translateX(-50%); /* Center the text horizontally */
+    bottom: 30%; 
+    left: -100%; 
+    transform: translateX(-50%); 
     animation: slideIn 2s forwards;
-    font-size: 1.5em; /* Make the text bigger */
+    font-size: 1.5em; 
 }
 #sliding-text2 {
     position: absolute;
-    bottom: 20%; /* Position higher up on the screen */
-    left: -100%; /* Start off the left edge of the screen */
-    transform: translateX(-50%); /* Center the text horizontally */
+    bottom: 20%; 
+    left: -100%; 
+    transform: translateX(-50%); 
     animation: slideIn 2s forwards;
-    font-size: 1.5em; /* Make the text bigger */
+    font-size: 1.5em; 
 }
 
 @keyframes slideIn {
     to {
-        left: 50%; /* End in the middle of the screen */
+        left: 50%; 
     }
 }
 #sliding-container {
     position: absolute;
-    top: 10%; /* Position near the top of the screen */
-    left: -100%; /* Start off the left edge of the screen */
-    transform: translateX(-50%); /* Center the container horizontally */
+    top: 10%; 
+    left: -100%;
+    transform: translateX(-50%); 
     animation: slideIn 2s forwards;
-    width:75%; /* Resize the image to 25% of its original width */
+    width:75%; 
     height: 70%;
     
 }
