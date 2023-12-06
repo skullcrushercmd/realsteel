@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body class="white-background">
+    <p id="text1" class="fade-in-text" style="animation-delay: 0s;">Hello, how'd you get here?</p>
+<p id="text2" class="fade-in-text hidden" style="animation-delay: 2s;">Did you scroll all the way down?</p>
+<p id="text3" class="fade-in-text hidden" style="animation-delay: 3s;">Well, welcome to the backrooms!</p>
+<p id="text4" class="fade-in-text hidden" style="animation-delay: 4s;">shhh, whats that over there?</p>
+<p id="sliding-text" class="hidden">special thanks to the unknown visitor </p>
+<p id="sliding-text2" class="hidden">aka array.prototype.filter. </p>
+<a id="sliding-container" class="hidden" href="https://discord.com/users/1174060054262075484" target="_blank">
+    <img id="sliding-image" src="content/visitor.png">
+    
+</a>
+    <script>
+var currentText = 1;
+var delay = 5000; // Delay in milliseconds
+
+function cycleText() {
+    if (currentText < 4) {
+        document.getElementById('text' + currentText).classList.add('hidden');
+    }
+    currentText++;
+    if (currentText <= 4) {
+        document.getElementById('text' + currentText).classList.remove('hidden');
+        setTimeout(cycleText, delay);
+    } else {
+        // Start the image and text animations after the text animations
+        document.getElementById('sliding-container').classList.remove('hidden');
+        setTimeout(function() {
+            document.getElementById('sliding-text').classList.remove('hidden');
+            setTimeout(function() {
+                document.getElementById('sliding-text').classList.remove('hidden'); // Hide sliding-text
+                document.getElementById('sliding-text2').classList.remove('hidden'); // Show sliding-text2
+            }, 2000); // Start the second text animation 2 seconds after the first text animation
+        }, 2000); // Start the first text animation 2 seconds after the image animation
+    }
+}
+
+setTimeout(cycleText, delay);
+    </script>
+</body>
+</html>
