@@ -163,4 +163,5 @@ body.white-background {
     animation: slideIn 2s forwards;
     width:75%; /* Resize the image to 25% of its original width */
     height: 70%;
+    
 }
