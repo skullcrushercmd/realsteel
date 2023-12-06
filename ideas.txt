@@ -52,3 +52,9 @@ html
             <div class="shadow"></div>
         </div>
     </div>
+
+
+    reminder:
+    make a thank you to "the unknown visitor"
+    username 
+array.prototype.filter.
