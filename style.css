@@ -11,8 +11,8 @@ body {
     margin: 0;
     padding: 0;
     
-    color: #f8f9fa; 
-    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(36, 36, 36));
+    color: #c4c4c4;
+    background: linear-gradient(45deg, rgb(20, 20, 20), rgb(36, 36, 36));
     position: relative; 
     overflow: hidden;
 }
@@ -30,6 +30,7 @@ body {
     margin: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .top-bar::before {
     content: "";
@@ -38,7 +39,7 @@ body {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(36, 36, 36)); 
+    background: linear-gradient(135deg, rgb(20, 20, 20), rgb(36, 36, 36)); 
     z-index: -1;
     filter: blur(10px);
 }
@@ -62,6 +63,7 @@ body {
     display: flex;
     gap: 22px;
     margin-right: 20px;
+    
 }
 .navigation a {
     text-decoration: none;
@@ -89,4 +91,5 @@ body {
 .lottie {
     width: 70px;
     height: 70px;
+    color: #c4c4c4;
 }
