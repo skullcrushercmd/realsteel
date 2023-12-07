@@ -18,7 +18,7 @@
 </a>
     <script>
 var currentText = 1;
-var delay = 5000; // Delay in milliseconds
+var delay = 5000; 
 
 function cycleText() {
     if (currentText < 4) {
@@ -28,8 +28,7 @@ function cycleText() {
     if (currentText <= 4) {
         document.getElementById('text' + currentText).classList.remove('hidden');
         setTimeout(cycleText, delay);
-    } else {
-        // Start the image and text animations after the text animations
+    } else {        
         document.getElementById('sliding-container').classList.remove('hidden');
         setTimeout(function() {
             document.getElementById('sliding-text').classList.remove('hidden');

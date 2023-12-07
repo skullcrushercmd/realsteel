@@ -1,6 +1,11 @@
+var totalScroll = 0;
+
 window.addEventListener('wheel', function(e) {
-    // Check if the user is trying to scroll down
-    if (e.deltaY > 0) {
+    // Add the scroll amount to the total
+    totalScroll += Math.abs(e.deltaY);
+
+    // Check if the total scroll amount exceeds the threshold
+    if (totalScroll > 1200) {
         // Redirect to a different page
         window.location.href = 'es.html';
     }
