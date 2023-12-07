@@ -14,11 +14,21 @@
 <div id="sliding-container" class="hidden">
     <a href="https://discord.com/users/1174060054262075484" target="_blank">
         <img id="sliding-image" src="content/visitor.png" ondragstart="return false">
+        <audio id="backrooms" src="/content/backrooms.wav" loop autoplay></audio>
+<audio id="scary" src="/content/scary.mp3"></audio>
     
 </a>
     <script>
 var currentText = 1;
 var delay = 5000; 
+
+
+var backrooms = document.getElementById('backrooms');
+var scary = document.getElementById('scary');
+
+
+backrooms.volume = 0.1; 
+scary.volume = 0.1; 
 
 function cycleText() {
     if (currentText < 4) {
@@ -27,15 +37,19 @@ function cycleText() {
     currentText++;
     if (currentText <= 4) {
         document.getElementById('text' + currentText).classList.remove('hidden');
-        setTimeout(cycleText, delay);
+        if (currentText === 4) {
+            
+            backrooms.pause();            
+            scary.play();
+            
+        }
+        setTimeout(cycleText, 6000);
     } else {        
         document.getElementById('sliding-container').classList.remove('hidden');
         setTimeout(function() {
             document.getElementById('sliding-text').classList.remove('hidden');
-            setTimeout(function() {
-                
-                document.getElementById('sliding-text2').classList.remove('hidden'); 
-            }, 2000); 
+            document.getElementById('sliding-text2').classList.remove('hidden');
+            backrooms.play();
         }, 2000); 
     }
 }
