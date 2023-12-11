@@ -124,6 +124,14 @@ body {
     text-decoration: none;
     color: #000000;
 }
+.navigation img {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+}
+.navigation svg {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+}
 .title {
     position: absolute;
     text-decoration: none;
@@ -146,6 +154,11 @@ body {
 .lottie {
     width: 70px;
     height: 70px;
+    color: #c4c4c4;
+}
+.info {
+    width: 50px;
+    height: 50px;
     color: #c4c4c4;
 }
 body.white-background {
