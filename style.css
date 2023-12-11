@@ -1,14 +1,19 @@
 @font-face {
     font-family: 'Steel';
     src: url('font/Steel.ttf') format('truetype');
+    font-display: swap; /* Add this line */
 }
+
 @font-face {
     font-family: 'Tesla';
     src: url('font/Tesla.ttf') format('truetype');
+    font-display: swap; /* Add this line */
 }
+
 @font-face {
     font-family: 'tech';
     src: url('font/tech.otf') format('opentype');
+    font-display: swap; /* Add this line */
 }
 body {
     font-family: 'Steel', sans-serif;
