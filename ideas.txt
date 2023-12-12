@@ -58,3 +58,7 @@ html
     make a thank you to "the unknown visitor"
     username 
 array.prototype.filter.
+
+
+slogan idea 
+we code perfection
