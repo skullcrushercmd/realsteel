@@ -5,7 +5,7 @@ window.addEventListener('wheel', function(e) {
     totalScroll += Math.abs(e.deltaY);
     console.log('Total scroll', totalScroll);
 
-    if (totalScroll > 1400) {
+    if (totalScroll > 10400) {
         console.log('Redirecting to es.html');
         window.location.href = 'es.html';
     }
